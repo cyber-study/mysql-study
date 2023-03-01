@@ -1,7 +1,7 @@
 version: "3.0"
 
 networks:
-  test_network:
+  test_mysql_network:
 
 
 services:
@@ -22,4 +22,4 @@ services:
     ports:
       - 23306:3306
     networks:
-      - test_network
+      - test_mysql_network

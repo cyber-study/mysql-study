@@ -1,0 +1,23 @@
+{
+  "name": "mysql-study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --inspect index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyber-study/mysql-study.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cyber-study/mysql-study/issues"
+  },
+  "homepage": "https://github.com/cyber-study/mysql-study#readme",
+  "dependencies": {
+    "mysql2": "^3.1.2"
+  }
+}

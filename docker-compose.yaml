@@ -1,0 +1,25 @@
+version: "3.0"
+
+networks:
+  test_network:
+
+
+services:
+  test_mysql_server:
+    container_name: test_mysql_container
+    image: mysql:8
+    restart: always
+    command: --disable-log-bin --skip-log-bin
+    volumes:
+      - ./configs/mysql:/etc/mysql/conf.d/
+      - ./data/mysql:/var/lib/mysql/
+      - ./entrypoints/mysql:/docker-entrypoint-initdb.d/
+      - ./dump/mysql:/home/
+    environment:
+      - TZ=Asia/Shanghai
+      - MYSQL_PASSWORD=glyz205070410
+      - MYSQL_ROOT_PASSWORD=glyz205070410
+    ports:
+      - 23306:3306
+    networks:
+      - test_network

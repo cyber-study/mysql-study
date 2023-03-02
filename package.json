@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/cyber-study/mysql-study#readme",
   "dependencies": {
+    "moment": "^2.29.4",
     "mysql2": "^3.1.2"
   },
   "devDependencies": {
